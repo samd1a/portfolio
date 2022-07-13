@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.navbar-left svg {
+  margin-right: 0.25rem;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+
+/*# sourceMappingURL=nav.styles.css.map */

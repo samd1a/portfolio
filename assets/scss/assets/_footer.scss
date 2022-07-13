@@ -1,0 +1,76 @@
+@use 'variables.scss';
+
+footer {
+    display: grid;
+    grid-row-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    width: min(90%, 100rem);
+    padding: 4.5rem 0rem;
+    justify-content: center;
+    
+    @media (min-width: variables.$small-med-breakpoint) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-left {
+        justify-content: center;
+
+        @media (min-width: variables.$small-med-breakpoint) {
+            justify-content: start;
+        }
+    }
+
+
+    ul {
+        list-style-type: none;
+        font-size: 0.875rem;
+        color: variables.$clr-black-600;
+        gap: .5rem;
+        display: flex;
+        flex-direction: column;
+        
+        li {
+            text-align: center;
+            width: max-content;
+            margin-inline: auto;
+
+            @media (min-width: variables.$small-med-breakpoint) {
+                text-align: start;
+                margin: 0;
+            }
+        }
+
+        
+    }
+
+    .nav-list-header {
+        font-size: 1rem;
+        color: variables.$clr-black-900;
+    }
+
+    .footer-info {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.3rem;
+        grid-area: 1 / 1 / 2 / 3; 
+
+        .copyright-msg {
+            font-size: 0.8rem;
+            text-align: center;
+            color: variables.$clr-black-600;
+            font-weight: 400;
+        }
+    }
+
+    
+}
+
+footer-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: variables.$clr-black-100;
+    margin-top: 4rem;
+    border-bottom: 5px solid variables.$clr-accent-500;
+}

@@ -1,0 +1,95 @@
+@use 'variables.scss';
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 3;
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: variables.$clr-black-900;
+    }
+
+    @media (min-width: variables.$small-med-breakpoint) {
+        display: none;
+    }
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    font-weight: variables.$ff-medium;
+    svg {
+        margin-right: .25rem;
+    }
+}
+
+.navbar-links {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    list-style-type: none;
+    gap: 1.5rem;
+    transition: all .5s ease-in-out;
+    backdrop-filter: blur(0px);
+    transform: translateX(100%);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    flex-direction: column;
+    z-index: 3;
+
+    @media (min-width: variables.$small-med-breakpoint) {
+        display: flex;
+        opacity: 1;
+        position: relative;
+        visibility: visible;
+        justify-content: initial;
+        align-items: initial;
+        width: auto;
+        height: auto;
+        font-size: 1rem;
+        flex-direction: row;
+        transform: translateX(0%);
+    }
+}
+
+.navbar-links.active {
+    display: flex;
+    position: fixed;
+    font-size: 1.5rem;
+    backdrop-filter: blur(8px);
+    visibility: visible;
+    transform: translateX(0%);
+}
+
+navigation-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
