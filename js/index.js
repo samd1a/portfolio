@@ -7,7 +7,7 @@ class NavigationBar extends HTMLElement {
         <link href=./assets/css/main.css rel=stylesheet>
         <nav class="width">
         <div class="left">
-            <a href="/index.html" class="navbar-left">
+            <a href="/" class="navbar-left">
                 <svg class="diamond-logo drop-shadow"  xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 90 82" fill="none">
                     <path d="M45.0894 82C44.4594 82 0 20.1506 0 20.1506C0 20.1506 14.5798 0.315567 15.1198 0.135246C15.6598 -0.0450745 74.339 -0.0450745 74.879 0.135246C75.419 0.315567 89.7288 19.4294 89.9988 20.1809C90.2688 20.9325 45.7194 82 45.0894 82Z" fill="#7FE0F5"/>
                 </svg>
@@ -16,9 +16,9 @@ class NavigationBar extends HTMLElement {
         </div>
         <div class="right">
             <ul class="navbar-links">
-                <li><a href="/about.html" class="nav-link about-link" id="about-link">About</a></li>
-                <li><a href="/index.html#projects" class="nav-link projects-link" id="project-link">Projects</a></li>
-                <li><a href="/contact.html" class="nav-link contact-link" id="contact-link">Contact</a></li>
+                <li><a href="/about" class="nav-link about-link" id="about-link">About</a></li>
+                <li><a href="/#projects" class="nav-link projects-link" id="project-link">Projects</a></li>
+                <li><a href="/contact" class="nav-link contact-link" id="contact-link">Contact</a></li>
             </ul>
             <div class="hamburger drop-shadow">
                 <span class="bar"></span>
@@ -75,16 +75,16 @@ class FooterBar extends HTMLElement {
             </div>
             <ul>
                 <li><p class="nav-list-header">Pages</p></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
             <ul>
                 <li><p class="nav-list-header">Contact</p></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">Codepen</a></li>
-                <li><a href="#">Email</a></li>
+                <li><a href="http://twitter.com/samd1a">Twitter</a></li>
+                <li><a href="http://github.com/samd1a">Github</a></li>
+                <li><a href="http://codepen.io/samdia">Codepen</a></li>
+                <li><a href="mailto:sam@samdia.cf">Email</a></li>
             </ul>
             <ul>
                 <li><p class="nav-list-header">Legal</p></li>
