@@ -45,10 +45,10 @@ class NavigationBar extends HTMLElement {
         var fileName = location.href.split("/").slice(-1); // retrieve filename
         fileName = fileName.toString() // convert to string
 
-        if (fileName.indexOf('about.html') >= 0) { 
+        if (fileName.indexOf('about') >= 0) { 
             this.shadowRoot.getElementById('about-link').style.color = '#5DDCF8'
         }
-        else if (fileName.indexOf('contact.html') >= 0) {
+        else if (fileName.indexOf('contact') >= 0) {
             this.shadowRoot.getElementById('contact-link').style.color = '#5DDCF8'
         }
         else {
