@@ -88,7 +88,7 @@ class FooterBar extends HTMLElement {
             </ul>
             <ul>
                 <li><p class="nav-list-header">Legal</p></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="https://www.privacypolicygenerator.info/live.php?token=gu3TZCgispzaamUijAH3m2gNGUWiHkF5">Privacy Policy</a></li>
                 <li><a href="https://icons8.com">Icons by icons8</a></li>
             </ul>
         </footer>
